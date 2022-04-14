@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en"
+   dir='ltr'   >
+  <head>
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer'
+        ? '&l=' + l
+        : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MZTLJ2B');
+</script>
+<!-- End Google Tag Manager -->
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-X8KBT1XLCD');
+    </script>
+    <link href='//api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="UNHCR South Sudan Factsheet_March 2018" />
+    <meta name="twitter:title" content="UNHCR South Sudan Factsheet_March 2018" />
+    <meta itemprop="name" content="UNHCR South Sudan Factsheet_March 2018" />
+    <meta property="og:url" content="https://data2.unhcr.org/en/documents/details/63197" />
+    <meta property="og:type" content="document">
+    <meta property="og:site_name" content="UNHCR Operational Data Portal (ODP)"/>
+    <meta property="og:image" content="https://data2.unhcr.org/images/documents/big_0816ab6c1bea55319e07b7c35f1a6dfede81419a.jpg" />
+    <meta property="twitter:image" content="https://data2.unhcr.org/images/documents/big_0816ab6c1bea55319e07b7c35f1a6dfede81419a.jpg" />
+    <meta itemprop="image" content="https://data2.unhcr.org/images/documents/big_0816ab6c1bea55319e07b7c35f1a6dfede81419a.jpg" />
+    <meta property="og:description" content="UNHCR South Sudan Factsheet_March 2018" />
+    <meta itemprop="description" content="UNHCR South Sudan Factsheet_March 2018" />
+    <meta property="twitter:description" content="UNHCR South Sudan Factsheet_March 2018" />
+
+    <title>
+                Document - UNHCR South Sudan Factsheet_March 2018
+            </title>
+<!-- Hotjar Tracking Code for https://data2.unhcr.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1968449,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+       
+                            <link href="https://data2.unhcr.org/bundles/common/images/favicon_unhcr.ico" rel="icon" type="image/x-icon">
+        
+   
+    
+    <link type="text/plain" rel="author" href="/humans.txt" />
+    
+  
+            <link rel="stylesheet" href="/build/app.f7804dd0.css">
+
+    
+
+  <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="/build/GeoBundle.27ce3182.css" media="screen" type="text/css" />
+  
+
+
+          <script src="/build/runtime.0c796a0d.js"></script><script src="/build/0.1fa1b802.js"></script><script src="/build/1.42e139f8.js"></script><script src="/build/app.8e9cd2a3.js"></script>
+    
+    
+       <!-- <script>
+    /*  (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                  (i[r].q = i[r].q || []).push(arguments)
+                }
+                , i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', '46054691-9', 'auto');
+      ga('send', 'pageview'); */
+    </script> --> 
+    
+    <link rel="stylesheet" href="https://data2.unhcr.org/bundles/common/css/fullcalendar.print.css" media="print" />
+
+    <script>
+      function shadeColor1(color, percent) {  // deprecated. See below.
+        var num = parseInt(color.slice(1), 16), amt = Math.round(2.55 * percent), R = (num >> 16) + amt, G = (num >> 8 & 0x00FF) + amt, B = (num & 0x0000FF) + amt;
+        return "#" + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 + (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 + (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+      }
+
+      function addCommas(nStr){
+        nStr += '';
+        x = nStr.split('.');
+        x1 = x[0];
+        x2 = x.length > 1 ? '.' + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+          x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+      }
+
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <script type="text/javascript">
+      window.cookieconsent_options = {
+        "message": "This website uses cookies to offer you the best experience online. By continuing to use our website, you agree to the use of cookies.",
+        "dismiss": "Got it!",
+        "learnMore": "More info",
+        "container": '#cookieconsent',
+        "link": null,
+        "theme": false
+      };
+    </script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZTLJ2B" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+        <div class='mobileHeader'>
+      <a class='mobileHeader_logo newLogo' href="/">
+        <h1 class='newLogo_name'>Operational Data Portal</h1>
+        <h2 class='newLogo_slogan'>Refugee Situations</h2>
+      </a>
+      <a class='mobileHeader_burger' data-mobileMenuTrigger>
+        <span>
+          Menu
+        </span>
+        <img class='mobileHeader_burger_open'
+          src='https://data2.unhcr.org/bundles/common/img/icons/menu.svg'
+          alt=''>
+        <img class='mobileHeader_burger_close'
+          src='https://data2.unhcr.org/bundles/common/img/icons/close.svg'
+          alt="">
+      </a>
+    </div>
+    
+
+    <div class='mainHeader'>
+      <div class='mainHeader_top'>
+
+                            <div class='mainHeader_top_column -logo'>
+            <a class='mainHeader_top_logo newLogo' href="https://data2.unhcr.org/">
+              <h1 class='newLogo_name'>Operational Data Portal</h1>
+              <h2 class='newLogo_slogan'>Refugee Situations</h2>
+            </a>
+          </div>
+        
+        <div class='mainHeader_top_column -nav'>
+          <nav class='mainHeader_top_nav'>
+                          <ul>
+    <li class=' covid  '>
+        <a href='https://data.unhcr.org/en/situations/covid-19' style=' color: #fff !important '>
+          COVID-19
+        </a>
+    </li>
+    
+  <li class=''>
+    <a href='https://data2.unhcr.org/en/countries/'>
+      Countries
+    </a>
+  </li>
+  <li class=''>
+    <a href='https://data2.unhcr.org/en/situations'>
+      Situations
+    </a>
+  </li>
+  <li class=''>
+    <a href='https://data2.unhcr.org/en/partners'>
+      Partners
+    </a>
+  </li>
+  <li class=''>
+      <a href='https://data2.unhcr.org/en/search?type%5B%5D=document&amp;global_filter%5Bdoc_type%5D%5B%5D=7&amp;maps=1'>
+        <i></i>
+        Maps
+      </a>
+  </li>
+  <li class='search '>
+    <a href='https://data2.unhcr.org/en/search'>
+      <i></i>
+      <span id="header_search_text">Search</span>
+    </a>
+  </li>
+</ul>
+
+                      </nav>
+        </div>
+
+        <div class='mainHeader_top_column -links'>
+          <nav class='mainHeader_top_links'>
+            <ul>
+              <li>
+                <a href='https://data2.unhcr.org/en/about/'>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href='https://data2.unhcr.org/en/contact/'>
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href='https://data2.unhcr.org/en/geoservices/'>
+                  Geoservices
+                </a>
+              </li>
+              <li>
+                <a href='https://im.unhcr.org/imtoolkit/' target="_blank">
+                  IM Toolkit
+                </a>
+              </li>
+                          </ul>
+          </nav>
+        </div>
+
+        <div class='mainHeader_top_column -lang'>
+          <div class='mainHeader_top_langSwitch langSwitch'>
+            <a class='langSwitch_link'
+              data-visibility-toggle='#headerLangSwitch'>
+              <i class='langSwitch_link_icon'></i>
+              <span id="header_language_switch_text">English</span>
+            </a>
+            <div class='langSwitch_dialog'
+              id='headerLangSwitch'
+              data-visibility-hideOnOutsideClick
+              aria-hidden='true'>
+              <div class='langSwitch_mobileHeader'>
+                Language
+              </div>
+              <nav class='langSwitch_options'>
+                <ul>
+                                      <li class='english' >
+                      <a href="/en/documents/details/63197">English</a>
+                    </li>
+                                      <li class='french' >
+                      <a href="/fr/documents/details/63197">Français</a>
+                    </li>
+                                      <li class='arabic' dir='rtl'>
+                      <a href="/ar/documents/details/63197">عربي,</a>
+                    </li>
+                                      <li class='spanish' >
+                      <a href="/es/documents/details/63197">Español</a>
+                    </li>
+                                  </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+              <div id="sub_nav" class="mainHeader_subnav clearfix" style="border-top: 1px solid #38609B;">
+            <ul class="sf-menu" style="float: left;"><li class="root"><a href="/en/search?type%5B0%5D=document"><i class="icon-file-alt"></i>&nbsp;
+          Documents
+        </a></li></ul>        </div>
+          </div>
+
+
+    <div id="cookieconsent"></div>
+    <div id='mobileOverlay' class='mobileOverlay'></div>
+
+
+    
+      <!-- content -->
+                
+<div class='newPage documentView'>
+  <div class='grid'>
+
+
+
+        <div class='grid_column -mediumPlus4 -large3'>
+      <div>
+        <h1 class='documentView_title pageTitle hideFromMediumPlus gapSmall'>
+          UNHCR South Sudan Factsheet_March 2018
+        </h1>
+      </div>
+      <div class='documentView_thumbnail gap'>
+        <a class='documentView_thumbnail_inner documentThumbnail'  href='https://data2.unhcr.org/en/documents/download/63197'>
+          <img class='documentView_img' src="https://data2.unhcr.org/images/documents/big_0816ab6c1bea55319e07b7c35f1a6dfede81419a.jpg">
+        </a>
+      </div>
+      <a class='button -cta -tall -fullWidth gapSmall' href='https://data2.unhcr.org/en/documents/download/63197' data-title="UNHCR South Sudan Factsheet_March 2018">
+        Download&nbsp;
+        <small>
+          (PDF, 1.14 MB)
+        </small>
+      </a>
+      <table class='definitionTable -compact -minimal'>
+        <tbody>
+          <tr class='hideFromMediumPlus'>
+            <th class='definitionTable_title'>Document Type:</th>
+            <td class='definitionTable_desc'>
+                              Updates
+                                          </td>
+          </tr>
+          <tr class='hideFromMediumPlus'>
+            <th class='definitionTable_title'>Document Type:</th>
+            <td class='definitionTable_desc'>English</td>
+          </tr>
+                      <tr>
+              <th class='definitionTable_title'>Publish Date:</th>
+              <td class='definitionTable_desc'>20 April 2018 (3 years ago)</td>
+            </tr>
+                    <tr>
+            <th class='definitionTable_title'>Upload Date:</th>
+            <td class='definitionTable_desc'>20 April 2018 (3 years ago)</td>
+          </tr>
+          <tr>
+            <th class='definitionTable_title'>Downloads:</th>
+            <td class='definitionTable_desc'>95</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+        <div class='grid_column -mediumPlus8 -large9'>
+      <div>
+                <h1 class='documentView_title pageTitle showFromMediumPlus gapSmall'>
+          UNHCR South Sudan Factsheet_March 2018
+        </h1>
+      </div>
+
+      <table class='definitionTable -compact -minimal gapSmall showFromMediumPlus'>
+        <tbody>
+          <tr>
+            <th class='definitionTable_title'>Document Type:</th>
+            <td class='definitionTable_desc'>
+                              Updates
+                                          </td>
+          </tr>
+          <tr>
+            <th class='definitionTable_title'>Document Language:</th>
+            <td class='definitionTable_desc'>English</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='documentView_description preformat'>
+        UNHCR South Sudan Factsheet_March 2018
+      </div>
+
+      
+      
+
+      
+      
+      <a class='button -cta -tall -fullWidth hideFromMediumPlus gap' href='https://data2.unhcr.org/en/documents/download/63197'>
+        document.single.download&nbsp;
+        <small>
+          (PDF, 1.14 MB)
+        </small>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+
+    
+
+          <!-- Modal --><div class="modal fade" id="subscribe_modal" tabindex="-1" role="dialog"
+       aria-labelledby="myModalLabel" data-subscribe-modal><div class="modal-dialog" role="document"><div class="modal-content"></div></div></div><footer class="main-footer"><div class="row"><div class="col-sm-2">
+        SECTIONS
+
+        <div class="row"><div class="col-xs-12 visible-xs" style="margin-bottom: 10px;"><a class="menu_bottom_item" href="https://data2.unhcr.org/">
+                Home
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/countries/">
+                Countries
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/situations">
+                Situations
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/partners">
+                Partners
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/search?type%5B0%5D=document">
+                Documents
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/document-repositories">
+                Document Repositories
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/dataviz">
+                Dataviz
+              </a></div><div class="col-md-12 hidden-xs"><a class="menu_bottom_item" href="https://data2.unhcr.org/">
+                Home
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/countries/">
+                Countries
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/situations">
+                Situations
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/partners">
+                Partners
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/search?type%5B0%5D=document">
+                Documents
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/document-repositories">
+                Document Repositories
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/dataviz">
+                Dataviz
+              </a></div></div></div><div class="col-sm-2" style="margin-bottom: 10px;">
+        RELATED SITES
+
+                                <div class="row"><div class="col-md-12 visible-xs"><a class="menu_bottom_item" href="https://im.unhcr.org/imtoolkit/">
+                IM Toolkit
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/dataviz">
+                Historical Refugee Data
+              </a></div><div class="col-md-12 hidden-xs"><a class="menu_bottom_item" href="https://im.unhcr.org/imtoolkit/">
+                IM Toolkit
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/dataviz">
+                Historical Refugee Data
+              </a></div></div></div><div class="col-sm-2" style="margin-bottom: 10px;">
+        MORE ABOUT US
+
+        
+        <div class="row"><div class="col-md-12 visible-xs"><a class="menu_bottom_item" href="https://data2.unhcr.org/en/about/">
+                About Us
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/contact/">
+                Contact Us
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/api/api-registration">
+                API
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/site-map/">
+                Sitemap
+              </a>
+              |                          <a class="menu_bottom_item" href="https://data2.unhcr.org/en/disclaimer/">
+                Disclaimer
+              </a></div><div class="col-md-12 hidden-xs"><a class="menu_bottom_item" href="https://data2.unhcr.org/en/about/">
+                About Us
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/contact/">
+                Contact Us
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/api/api-registration">
+                API
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/site-map/">
+                Sitemap
+              </a><br><a class="menu_bottom_item" href="https://data2.unhcr.org/en/disclaimer/">
+                Disclaimer
+              </a></div></div></div><div class="col-sm-2 hidden-xs"><div class="row"><div class="col-md-12"><span class="logo-lg" style="font-size: 14px"><b>Operational</b>&nbsp;Data Portal</span></div><div class="col-md-12"><h5>
+              A service provided by&nbsp;
+              <img style="padding-right: 28px;" class="img-responsive center-block" src="https://data2.unhcr.org/bundles/common/images/UNHCRLogoFooter.png" /></h5></div></div></div><div class="col-sm-2 hidden-xs"><div class="row gapSmall"><div class='share'><a class='share_link'
+              href="#"
+              data-visibility-toggle='#footerShare'
+              data-fetch-share-url
+              >
+              Share
+              <i class='share_link_icon'></i></a><div class='share_dialog' id='footerShare'
+              data-visibility-hideOnOutsideClick
+              aria-hidden='true'><a class='share_dialog_close' data-visibility-hide='#footerShare'><img src='https://data2.unhcr.org/bundles/common/img/icons/close-white.svg' alt='Close'></a><ul class='share_dialog_services inlineList'><li class='inlineList_item'><a href='' class='data-share-facebook' data-share><img src='https://data2.unhcr.org/bundles/common/img/icons/social/facebook-white.svg' alt=''></a></li><li class='inlineList_item'><a href='' class='data-share-twitter' data-share data-url="https://data2.unhcr.org/en/documents/details/63197"><img src='https://data2.unhcr.org/bundles/common/img/icons/social/twitter-white.svg' alt=''></a></li></ul><div class='share_dialog_link'><input class='share_dialog_link_input' type='text' readonly
+                  data-fetch-url-target
+                  onClick='this.select()' onFocus='this.select()'
+                  value='...generating, please wait'></div></div></div></div><div class="row gapSmall"><button type="button" class="btn btn-primary" data-toggle="modal"
+                  data-target="#subscribe_modal">
+            Subscribe to our newsletter
+          </button></div><div class="row"><a rel="license" href="https://creativecommons.org/licenses/by/3.0/igo/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by/3.0/88x31.png" /></a><br /><span
+              xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Refugees Operational Data Portal</span>
+            by <a
+              xmlns:cc="http://creativecommons.org/ns#" href="http://www.unhcr.org" property="cc:attributionName"
+              rel="cc:attributionURL">UNHCR</a>
+            is licensed under a
+              <a rel="license" href="https://creativecommons.org/licenses/by/3.0/igo/">
+                Creative Commons Attribution 3.0 International License</a>.
+        </div></div></div></footer><script>
+    $(document).ready(function () {
+
+      handle('[data-fetch-share-url]', function () {
+
+        $(this).on('click', function () {
+
+          var t = $(this);
+          var container = t.parents('div.share:first');
+          var url = t.attr('data-fetch-share-url');
+
+          if (container.find('[data-fetch-url-target]:first').val() == "...generating,\u0020please\u0020wait") {
+            $.ajax({
+              url: Routing.generate('generate_short_url', {}, false),
+              data: {
+                original_url: url ? url : "https\u003A\/\/data2.unhcr.org\/en\/documents\/details\/63197"
+              },
+              dataType: 'json',
+              success: function(response) {
+                container.find('[data-fetch-url-target]').val(response.shortUrl);
+                container.find('[data-url]').each(function () {
+                  $(this).attr('data-url', response.shortUrl);
+                });
+              }
+            });
+          }
+
+        });
+
+      });
+
+      handle('[data-subscribe-confirm]', function () {
+
+        var t = $(this);
+        var container = t.parents('[data-subscribe-modal]');
+        var containerContent = container.find('[data-subscribe-body]');
+        var currentUrl =  "https\u003A\/\/data2.unhcr.org\/en\/documents\/details\/63197";
+        container.find('[data-subscribe-current-url]').val(currentUrl);
+        container.find('[data-subscribe-filter]').val('{"sv_id": "0", "geo_id": "0"}');
+
+        t.on('click', function (e) {
+          e.preventDefault();
+
+          $.ajax({
+            method: 'POST',
+            url: Routing.generate('owp_subscribe', {}, true),
+            data: container.find('form:first').serialize(),
+            dataType: 'json',
+            success: function(response) {
+              if (response.status) {
+                if (response.status == 'success') {
+                  containerContent.html(container.find('[data-success-html]').html());
+                  setTimeout(function () {
+                    container.find('.close:first').click();
+                  }, 500);
+                } else {
+                  containerContent.html(response.view);
+                  handleElements();
+                }
+              } else {
+
+              }
+            }
+          });
+
+        });
+
+      });
+
+    });
+  </script>        <script type="text/javascript">
+      SocialShareKit.init({
+        selector: '[data-share]'
+      });
+      SocialShareKit.init();
+
+      
+    </script>
+
+    <div class="modal fade" id="layouts_list">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                      aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Available layouts</h4>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default"
+                    data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script>
+      $(document).ready(function () {
+        handleElements();
+      });
+      
+    if(window.location.hostname=="r4v.info"){
+        if(window.location.pathname.substring(0,3)=="/es"){
+            document.body.innerHTML=document.body.innerHTML.replace(/data2.unhcr.org\/es\/documents/g,'r4v.info/es/documents');
+         }
+        if(window.location.pathname.substring(0,3)=="/en"){
+            document.body.innerHTML=document.body.innerHTML.replace(/data2.unhcr.org\/en\/documents/g,'r4v.info/en/documents');
+        }
+        window.document.getElementsByClassName('french')[0].style='display:none;';
+        window.document.getElementsByClassName('arabic')[0].style='display:none;';
+
+        window.document.getElementsByClassName('mainHeader_top_links')[0].style='display:none;';
+        window.document.getElementsByClassName('mainHeader_top_nav')[0].style='display:none;';
+        window.document.getElementsByClassName('main-footer')[0].style='display:none;';
+
+        window.document.getElementsByClassName('funding-headline')[0].style = 'color:#000000;';
+        window.document.getElementsByClassName('funding-pie-legend-value')[0].style = 'color:#000000 !important;';
+
+    }
+
+    if(window.location.hostname=="r4sahel.info"){
+        if(window.location.pathname.substring(0,3)=="/en"){
+            document.body.innerHTML=document.body.innerHTML.replace(/data2.unhcr.org\/en\/documents/g,'r4sahel.info/en/documents');
+        }
+        if(window.location.pathname.substring(0,3)=="/fr"){
+            document.body.innerHTML=document.body.innerHTML.replace(/data2.unhcr.org\/fr\/documents/g,'r4sahel.info/fr/documents');
+        }
+        window.document.getElementsByClassName('spanish')[0].style='display:none;';
+        window.document.getElementsByClassName('arabic')[0].style='display:none;';
+
+        window.document.getElementsByClassName('mainHeader_top_links')[0].style='display:none;';
+        window.document.getElementsByClassName('mainHeader_top_nav')[0].style='display:none;';
+        window.document.getElementsByClassName('main-footer')[0].style='display:none;';
+
+    }
+
+    if(window.location.hostname=="data2.unhcr.org"){
+        if(window.location.pathname.indexOf('platform') != -1 || window.location.pathname.indexOf('sahelcrisis') != -1){
+            window.document.getElementsByClassName('mainHeader_top_links')[0].style='display:none;';
+            window.document.getElementsByClassName('mainHeader_top_nav')[0].style='display:none;';
+            window.document.getElementsByClassName('main-footer')[0].style='display:none;';
+        }
+    }
+
+    //track file downloads
+		$('.searchResultItem_download_link').on('click', function() {
+			dataLayer.push({
+      'event': 'gaEvent',
+			'debug_mode':true,
+			'eventAction': 'download',
+			'eventCategory' : 'download',
+			'documentTitle': $(this).attr('data-title'),
+			'url': $(this).attr("href")
+			 });
+		});
+
+    </script>
+
+  </body>
+</html>

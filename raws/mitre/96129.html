@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="fr" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="fr" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="fr" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="fr" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="fr" dir="ltr" prefix="og: http://ogp.me/ns# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><![endif]-->
+  <!--[if !IE]><!--><html class="no-js" lang="fr" dir="ltr" prefix="og: http://ogp.me/ns# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["gov-bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VQUBWVBTChABVFRQAAUBVFc=",licenseKey:"e47e4f98d6",applicationID:"105274623"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(28),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(29),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(29),a=t(28);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(25),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(28),s=t(29),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(30);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],24:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(27),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],25:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],26:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],27:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],28:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],29:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],30:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(28),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=O.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(22),s=t("handle"),c=t(28),f=t("ee"),u=t(26),d=t(23),l=t(17),p=t(19),h=l.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1214.min.js"},S=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:S,userAgent:u,disabled:b};if(!b){t(16),t(24),v[w]?(v[w]("DOMContentLoaded",o,p(!1)),m[w]("load",r,p(!1))):(v[g]("onreadystatechange",i),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(29),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
+<link rel="shortcut icon" href="https://www.unocha.org/sites/unocha/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="width" />
+<meta http-equiv="cleartype" content="on" />
+<link rel="apple-touch-icon-precomposed" href="https://www.unocha.org/sites/all/themes/contrib/omega/omega/apple-touch-icon-precomposed-114x114.png" sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" href="https://www.unocha.org/sites/all/themes/contrib/omega/omega/apple-touch-icon-precomposed-144x144.png" sizes="144x144" />
+<link rel="apple-touch-icon-precomposed" href="https://www.unocha.org/sites/all/themes/contrib/omega/omega/apple-touch-icon-precomposed-72x72.png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="https://www.unocha.org/sites/all/themes/contrib/omega/omega/apple-touch-icon-precomposed.png" />
+<meta name="description" content="What are El Niño and La Niña? El Niño is a term for the warming phase of the El Niño Southern Oscillation (ENSO), a cyclical weather pattern that influences temperature and rainfall across the global. It is a warming of the central to eastern tropical Pacific Ocean. During an El Niño event, sea surface temperatures across the Pacific can warm by 1–3°F or more for anything" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.unocha.org/fr/themes/el-ni%C3%B1o/el-ni%C3%B1o-and-la-ni%C3%B1a" />
+<link rel="shortlink" href="https://www.unocha.org/fr/node/944549" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="OCHA" />
+<meta property="og:url" content="https://www.unocha.org/fr/themes/el-ni%C3%B1o/el-ni%C3%B1o-and-la-ni%C3%B1a" />
+<meta property="og:title" content="El Niño and La Niña" />
+<meta property="og:description" content="What are El Niño and La Niña? El Niño is a term for the warming phase of the El Niño Southern Oscillation (ENSO), a cyclical weather pattern that influences temperature and rainfall across the global. It is a warming of the central to eastern tropical Pacific Ocean. During an El Niño event, sea surface temperatures across the Pacific can warm by 1–3°F or more for anything between a few months to two years. El Niño impacts weather systems around the globe, triggering predictable disruptions in temperature, rainfall and winds." />
+<meta property="og:updated_time" content="2018-05-14T05:48:14-04:00" />
+<meta property="og:image" content="https://www.unocha.org/sites/unocha/files/styles/og_image/public/LakeChad_0.png?itok=QTfVev4c" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@UNOCHA" />
+<meta name="twitter:creator" content="@UNOCHA" />
+<meta name="twitter:url" content="https://www.unocha.org/fr/themes/el-ni%C3%B1o/el-ni%C3%B1o-and-la-ni%C3%B1a" />
+<meta name="twitter:title" content="El Niño and La Niña" />
+<meta name="twitter:description" content="What are El Niño and La Niña? El Niño is a term for the warming phase of the El Niño Southern Oscillation (ENSO), a cyclical weather pattern that influences temperature and rainfall across the" />
+<meta property="article:published_time" content="2017-07-05T15:16:08-04:00" />
+<meta property="article:modified_time" content="2018-05-14T05:48:14-04:00" />
+  <title>El Niño and La Niña | OCHA</title>
+  <link type="text/css" rel="stylesheet" href="https://www.unocha.org/sites/unocha/files/css/css_9xQ58CgqfkRKRH0iJTUlL0MypfB5i3PERTWhnIha4Bw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unocha.org/sites/unocha/files/css/css_uUZQH2UlYCl8HVdd6msIuLGTlKJr2OX9hBUo1UXuYXM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unocha.org/sites/unocha/files/css/css_uZuvtejGy2O1qzSWUF6YMwZjOuDv6QvPSiMS7yCrS4c.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.unocha.org/sites/unocha/files/css/css_OtdwcrMYOVRvt0IooM_nQlNmnSKShqs3QPCRnuqf2LA.css" media="all" />
+  <script src="https://www.unocha.org/sites/unocha/files/js/js_zI5HdSlta19y8tPpxC3vmHwMedbDker9QDD86GEE_U8.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
+<script src="https://www.unocha.org/sites/unocha/files/js/js_GR-puOdUlvMc2DIZ5iH3q9F0wrMJlR5FpFSxkJekRag.js"></script>
+<script>dataLayer = [{"dimension1":"Page (General)","dimension12":"utilisateur anonyme","dimension13":"2017-07-05","event":"gtm.js","gtm.start":1642059825}];</script>
+<script src="https://www.unocha.org/sites/unocha/files/js/js_DrmF4v_UJ6CQRrD5JI78YoBa9pbs52cG4_1Munw_t_8.js"></script>
+<script src="https://www.unocha.org/sites/unocha/files/js/js_8yletKwlfFgpAUJ-1oyNhhvJJh4OoA5TfsDL6wg-Qow.js"></script>
+<script src="https://www.unocha.org/sites/unocha/files/js/js_G4x-_DvvnZkwSMEa97VbtV5mnc0Wr3CUJVAcidvMyUo.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"fr\/","CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"single"},"better_exposed_filters":{"views":{"basic_pages":{"displays":{"block_2":{"filters":[]}}}}},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"fast","autoArrows":false,"dropShadows":false},"plugins":{"supersubs":true}}},"urlIsAjaxTrusted":{"\/fr\/themes\/el-ni%C3%B1o\/el-ni%C3%B1o-and-la-ni%C3%B1a":true},"picture":{"mappings":[["UNOCHA Icon 100px","unocha_icon_100px"],["UNOCHA Icon 70px","unocha_icon_70px"],["UNOCHA Sidebar","unocha_sidebar"],["UNOCHA Main content Full","unocha_full"],["UNOCHA Main content Full (Square)","unocha_full_square"],["UNOCHA Main content Half","unocha_half"],["UNOCHA Main content Half (Square)","unocha_half_square"],["UNOCHA Main content Third","unocha_third"],["UNOCHA Main content Third (Square)","unocha_third_square"],["Not Set","not_set"]],"label":"Image size"},"extlink":{"extTarget":0,"extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":"append","extSubdomains":0,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)","extUseFontAwesome":false}});</script>
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,700,900,200' rel='stylesheet' type='text/css'>
+
+  <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-5061908708594318",
+      enable_page_level_ads: true
+    });
+  </script>
+  <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '146818889338406');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=146818889338406&ev=PageView
+  &noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-944549 node-type-basic-page section-themes" id="body">
+  <a href="#main-content" class="element-invisible element-focusable">Aller au contenu principal</a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3797XQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- navbar-header -->
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar top-bar"></span>
+    <span class="icon-bar middle-bar"></span>
+    <span class="icon-bar bottom-bar"></span>
+  </button>
+  <div class="navbar-brand">
+    <a href="/" rel="home" id="logo" title="Home">
+      <img typeof="foaf:Image" src="/sites/unocha/files/ochalogo_0.png" alt="Home">
+    </a>
+  </div>
+</div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                      <div class="l-region l-region--main-menu">
+    <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1"><div class="panel-pane pane-block pane-superfish-1">
+            <ul  id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none"><li id="menu-219-1" class="sf-depth-1 sf-no-children"><a href="/fr/about-ocha" class="sf-depth-1"> ABOUT OCHA</a></li><li id="menu-415-1" class="sf-depth-1 sf-no-children"><a href="/fr/where-we-work" class="sf-depth-1">WHERE WE WORK</a></li><li id="menu-98539-1" class="sf-depth-1 sf-no-children"><a href="/fr/funding" id="about_us" name="about_us" class="about_us sf-depth-1">FUNDING</a></li><li id="menu-96858-1" class="sf-depth-1 sf-no-children"><a href="/fr/node/950479" id="about_us" name="about_us" class="about_us sf-depth-1">RESEARCH AND REPORTS</a></li><li id="menu-1627-1" class="sf-depth-1 sf-no-children"><a href="/fr/media-centre" class="sf-depth-1">MEDIA CENTRE</a></li><li id="menu-99413-1" class="sf-depth-1 sf-no-children"><a href="/fr/about-ocha/job-opportunities" id="about_us" name="about_us" class="about_us sf-depth-1">JOBS</a></li></ul>    </div>
+</div></div>  </div>
+                </li>
+                <li>
+                                  </li>
+                <li>
+                    <div class="l-region l-region--donate-top">
+    <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1"><div class="panel-pane pane-page-features-donate">
+            <a target="_blank" href="https://crisisrelief.un.org/" class="btn donate-top-button country-donate">Donate</a>
+    </div>
+</div></div>  </div>
+                </li>
+                <li>
+                  <!-- search-desktop -->
+<div class="expSearchBox hidden-sm hidden-xs">
+    <button type="button" id="search" class="search-btn">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        <span class="element-invisible">Search</span>
+    </button>
+    <div class="search-box-container">
+        <div class="search-open">
+        <div class="close-search close thick"></div>
+        <div class="l-region l-region--search-box">
+                <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1">
+                <div class="panel-pane pane-block pane-search-form">
+                <form class="search-block-form" action="/srch" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+                    <div class="form-item form-type-textfield form-item-search-block-form">
+                    <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                    <input title="Enter the terms you wish to search for." type="text" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+                    </div>
+                    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div>
+                </div></div></form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+                </li>
+                <li id="search-mobile">
+                  <!-- search-mobile -->
+<div class="text-center">
+    <div class="l-region l-region--search-box">
+            <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1">
+            <div class="panel-pane pane-block pane-search-form">
+            <form class="search-block-form" action="/srch" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+                <div class="form-item form-type-textfield form-item-search-block-form">
+                <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                <input title="Enter the terms you wish to search for." type="text" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+                </div>
+                <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit"></div>
+            </div></div></form>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container-fluid">
+  <!--Top Banner-->
+    <div class="l-region l-region--hero">
+    <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1"><div class="panel-pane pane-entity-field pane-node-field-basic-page-main-image">
+            <div class="field field--name-field-basic-page-main-image field--type-media field--label-hidden"><div class="field__items"><div class="field__item even"><div id="file-78479" class="file file-image file-image-png" class="file file-image file-image-png">
+
+        <h2 class="element-invisible"><a href="/fr/files/lakechadpng-0">LakeChad.png</a></h2>
+    
+  
+  <div class="content">
+    <img typeof="foaf:Image" src="https://www.unocha.org/sites/unocha/files/LakeChad_0.png" width="1601" height="510" alt="" />  </div>
+
+  
+</div>
+</div></div></div>    </div>
+</div></div>  </div>
+</div>
+
+<div class="container">
+  <!--Breadcrumb-->
+      <div class="l-region l-region--breadcrumb">
+    <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1"><div class="panel-pane pane-page-breadcrumb">
+            <h2 class="element-invisible">Vous êtes ici</h2><ul class="breadcrumb"><li><a href="/fr">Home</a></li><li><a href="/fr/themes">Themes</a></li><li><a href="/fr/themes/el-ni%C3%B1o">El Niño</a></li><li>El Niño and La Niña</li></ul>    </div>
+</div></div>  </div>
+</div>
+<div id="main-content" class="container">
+      <div class="row">
+              <div class="col-md-8">
+          <h1>
+              <div class="l-region l-region--title">
+    <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1"><div class="panel-pane pane-node-title">
+            El Niño and La Niña    </div>
+</div></div>  </div>
+          </h1>
+                    <!--Date -->
+        </div>
+        <div class="col-md-8">
+          <div class="l-region l-region--main">
+    <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="1"><div class="panel-pane pane-node-body">
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden"><div class="field__items"><div class="field__item even" property="content:encoded"><h4>What are El Niño and La Niña?</h4>
+<p>El Niño is a term for the warming phase of the El Niño Southern Oscillation (ENSO), a cyclical weather pattern that influences temperature and rainfall across the global. It is a warming of the central to eastern tropical Pacific Ocean. During an El Niño event, sea surface temperatures across the Pacific can warm by 1–3°F or more for anything between a few months to two years. El Niño impacts weather systems around the globe, triggering predictable disruptions in temperature, rainfall and winds.</p>
+<p>La Niña is the opposite – a cooling phase of ENSO that tends to have global climate impacts opposite to those of El Niño.</p>
+<p>Though ENSO is a single climate phenomenon, it has three states, or phases, it can be in “El Niño”, “La Niña” (the two opposite phases) or “neutral” (neither El Niño nor La Niña). To qualify as an El Niño event, according to the US National Oceanic and Atmospheric Administration (NOAA), sea surface temperatures (SSTs) must remain at or above 0.5°C (about 1°F) for at least three months. For La Niña, the SSTs are below average rather than above.</p>
+<h4>Does a La Niña always follow an El Niño?</h4>
+<p>A La Niña episode may, but does not always, follow El Niño.</p>
+<h4>How often does it occur?</h4>
+<p>The pendulum between an El Niño and La Niña phase swings back and forth, on average, every three to seven years.</p>
+<h4>Wait, didn’t we just have an El Niño episode?</h4>
+<p>Yes, the last episode began just two years ago, in 2015. The 2015/2016 El Niño was one of the three strongest episodes on record. There were super El Niño events in 1972-73, 1982-83 and in 1997-98.</p>
+<h4>How long do El Niño and La Niña typically last and when do they develop?</h4>
+<p>El Niño and La Niña episodes typically last 9-12 months. It is somewhat easier for a La Niña event to last longer (up to 2–3 years) than an El Niño, which rarely persists for more than a year at a time. They both tend to develop during the spring (March-June), reach peak intensity during the late autumn or winter (November-February), and then weaken during the spring or early summer (March-June).</p>
+<h4>How do El Niño and La Niña occur?</h4>
+<p>El Niño and La Niña events are natural occurrences in the global climate system resulting from variations in ocean temperatures in the Equatorial Pacific. In turn, changes in the atmosphere impact the ocean temperatures and currents. The system oscillates between warm (El Niño) to neutral or cold (La Niña) conditions.</p>
+<h4>Is El Niño caused by climate change?</h4>
+<p>No. El Niño events are not caused by climate change – they are a natural reoccurring phenomenon that have been occurring for thousands of years. Some scientists believe they may be becoming more intense and/or more frequent as a result of climate change, although exactly how El Niño interacts with climate change is not 100 percent clear. Climate change is likely to affect the impacts related to El Niño and La Niña, in terms of extreme weather events. Further research will help separate the natural climate variability from any trends due to human activities.</p>
+<h4>Can we prevent El Niño and La Niña from occurring?</h4>
+<p>No, El Niño and La Niña are naturally occurring climate patterns and humans have no direct ability to influence their onset, intensity or duration.</p>
+<h4>What is the humanitarian impact of El Niño?</h4>
+<p>El Niño and La Niña can make extreme weather events more likely in certain regions, including droughts, floods and storms. Over 60 million people were impacted by the 2015/2016 El Niño although an exact number is hard to pinpoint. East Africa, Southern Africa, the Pacific Islands, South East Asia and Central America were most affected by extreme weather, including below-normal rains and flooding. The humanitarian fallout in certain areas included increased food insecurity due to low crop yields and rising prices; higher malnutrition rates; devastated livelihoods; and forced displacement. Excessive rainfall also triggered and exacerbated outbreaks of waterborne diseases such as cholera and typhoid as well as vector-borne diseases such as malaria. Twenty-three countries [1] issued humanitarian appeals totaling more than US$5 billion.</p>
+<h4>What are the global impacts of La Niña?</h4>
+<p>While El Niño and La Niña do impact global climate patterns; however, they neither affect all regions nor do are their impacts in a given region the same. In many locations, especially in the tropics, La Niña (or cold episodes) produces roughly the opposite climate variations from El Niño. For instance, parts of Australia and Indonesia are prone to drought during El Niño but are typically wetter than normal during La Niña. For the most accurate information at national or local level, it is important to consult National Meteorological and Hydrological Services. WMO Regional Climate Centres may also provide more particular information at national and regional levels.</p>
+<p>The impacts of each La Niña event are never exactly the same. They depend on the intensity of the event, the time of year when it develops and the interaction with other climate patterns. La Niña is often associated with wet conditions in eastern Australia, and with heavy rainfall in Indonesia, the Philippines and Thailand. La Niña usually leads to increased rainfall in North Eastern Brazil, Colombia and other northern parts of South America and is associated with rainfall deficiency in Uruguay and parts of Argentina. Drier-than-normal conditions are generally observed along coastal Ecuador and North Western Peru. La Niña episodes feature a very wave-like jet stream flow over the United States and Canada in the northern winter, with colder and stormier than average conditions across the North, and warmer and less stormy conditions across the South. La Niña events are generally associated with increased rainfall in southern Africa, although they are not the only contributing factors. La Niña is associated with rainfall deficiency in equatorial eastern Africa – for instance Somalia and eastern Kenya.</p>
+<p>It is important to stress that such factors as the Indian Ocean Dipole, the North Atlantic Oscillation/Arctic Oscillation can also have an important influence on seasonal climate.</p>
+<h4>Can we predict El Niño and La Niña episodes before they occur?</h4>
+<p>Yes, scientists can often predict the onset of El Niño and La Niña several months to a year in advance, thanks to modern climate models and observations data (which includes sensors on satellites and ocean buoys), which constantly monitors changing conditions in the ocean and atmosphere.</p>
+<h4>How do we predict El Niño/La Niña?</h4>
+<p>The first model-based ENSO predictions started in the late 1980s. Today, a number of computer models around the world use current ocean temperatures and atmospheric conditions to project the state of ENSO, looking a year or more into the future. Forecasters examine multi-model ensembles, scrutinizing where these models agree or disagree in order to issue El Niño and La Niña forecasts. Among the leading sources of regular ENSO forecasts are NOAA’s Climate Prediction Center, the International Research Institute for Climate and Society at Columbia University (working with NOAA), and the Australian Bureau of Meteorology. (Note that the Australian BOM uses a higher threshold for El Niño development than the US definition; see above).</p>
+<p>The World Meteorological Organization (WMO) facilitates development of a consensus-based El Niño/La Niña Update that is issued on a quasi-regular basis (approximately once every three months) through a collaborative effort with the International Research Institute for Climate and Society (IRI) and based on contributions from all the leading centres around the world.</p>
+<p>Generally, the strongest ENSO events are predicted more accurately than weaker ones. A 2012 analysis in the Bulletin of the American Meteorological Society evaluated ENSO forecasts from 20 different prediction models for the period 2002 to 2011. The study found that the predictive skill of these models actually declined in the 2000s as compared to the 1980s and 1990s—not because of any loss in model quality (the models themselves had actually improved), but because the weaker, more variable ENSO events during this period made forecasting a far greater challenge.<br />
+Sources: UNOCHA, WMO, US National Oceanic and Atmospheric Administration (NOAA).</p>
+<p>
+[1] <span style="font-size:12px;">Angola, Botswana, Democratic Republic of the Congo, El Salvador, Ethiopia, Guatemala, Haiti, Honduras, Lesotho, Madagascar, Malawi, Marshall Islands, Mozambique, Namibia, Palau, Papua New Guinea, Somalia, Sudan, Swaziland, Timor-Leste, Viet Nam, Zambia and Zimbabwe.</span></p>
+</div></div></div>    </div>
+</div></div>  </div>
+      </div>
+        <div class="col-md-4">
+          <div class="margin20-bottom">
+              <aside class="l-region l-region--sidebar">
+    <div class="panel-pane-wrapper"><div class="panel-pane-inner" data-num-cols="2"><div class="panel-pane pane-block pane-ocha-socbutt-vertical">
+            <div style="margin: 0 auto;" class="social"><a href="mailto:?subject=El%20Ni%C3%B1o%20and%20La%20Ni%C3%B1a&amp;body="><i class="fa fa-lg fa-envelope"></i></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.unocha.org%2Ffr%2Fthemes%2Fel-ni%C3%B1o%2Fel-ni%C3%B1o-and-la-ni%C3%B1a" target="_blank"><i class="fa fa-lg fa-facebook"></i></a><a href="https://twitter.com/intent/tweet?text=El%20Ni%C3%B1o%20and%20La%20Ni%C3%B1a -&amp;url=https%3A%2F%2Fwww.unocha.org%2Ffr%2Fthemes%2Fel-ni%C3%B1o%2Fel-ni%C3%B1o-and-la-ni%C3%B1a" target="_blank"><i class="fa fa-lg fa-twitter"></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.unocha.org%2Ffr%2Fthemes%2Fel-ni%C3%B1o%2Fel-ni%C3%B1o-and-la-ni%C3%B1a&amp;title=El%20Ni%C3%B1o%20and%20La%20Ni%C3%B1a&amp;summary=&amp;source=https%3A%2F%2Fwww.unocha.org%2Ffr%2Fthemes%2Fel-ni%C3%B1o%2Fel-ni%C3%B1o-and-la-ni%C3%B1a" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></div>    </div>
+ <div class="panel-pane pane-entity-field pane-node-field-basic-page-right-side">
+            <div class="field field--name-field-basic-page-right-side field--type-text-with-summary field--label-hidden"><div class="field__items"><div class="field__item even"><table border="0" cellpadding="5" cellspacing="5" width="95%">
+<tbody>
+<tr>
+<td class="docheaderbkg">Key forecasts</td>
+</tr>
+<tr>
+<td class="docbkg">WMO</td>
+</tr>
+<tr>
+<td class="docbkg">NOAA</td>
+</tr>
+<tr>
+<td class="docbkg">Australia BOM</td>
+</tr>
+<tr>
+<td class="docbkg">IRI</td>
+</tr>
+</tbody>
+</table>
+</div></div></div>    </div>
+</div></div>  </aside>
+          </div>
+        </div>
+          </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+          </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4">
+                  </div>
+        <div class="col-md-4">
+                  </div>
+        <div class="col-md-4">
+                  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<!-- subscribe -->
+<div class="container-fluid dark-blue-bk">
+  <div class="container">
+    <div class="row">
+            <div class="col-md-12 text-center white footer-top">
+        <h4 class="white">SUBSCRIBE TO RECEIVE OCHA'S INFORMATION PRODUCTS</h4>
+        <div class="subscribe-footer white">
+          <a href="/about-us/subscribe" class="btn subscribe-send btn-white"><img class="newsletter-icon" src="/sites/unocha/files/newsletter-icon.png" alt="newsletter">SUBSCRIBE</a>
+        </div>
+      </div>
+          </div>
+  </div>
+</div>
+<!-- footer-main -->
+<div class="container-fluid black-bk footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 white">
+        <h2 class="white">Contact us</h2>
+        <ul>
+          <li>
+                          <a href="/about-us/contact-us"><img class="img-responsive text-left contact-icon" src="/sites/unocha/files/contact.png" alt=""></a>
+                      </li>
+        </ul>
+    </div>
+    <div class="col-md-3 white ">
+      <h2 class="white">OCHA Sites</h2>
+      <div class="social">
+        <ul class="partners">
+          <li>
+            <a href="https://agendaforhumanity.org/" class="link-list" target="_blank"><img src="/sites/unocha/files/afh.png" alt="AFH" width="88"></a>
+          </li>
+          <li>
+            <a href="https://www.unocha.org/cerf" class="link-list" target="_blank"><img src="/sites/unocha/files/CERF.png" alt="CERF" width="88"></a>
+          </li>
+          <li>
+            <a href="https://gdacs.org/" class="link-list" target="_blank"><img src="/sites/unocha/files/Gdacs.png" alt="Gdacs" width="88"></a>
+          </li>
+          <li>
+            <a href="https://data.humdata.org/" class="link-list" target="_blank"><img src="/sites/unocha/files/HDX.png" alt="HDX" width="88"></a>
+          </li>
+          <li>
+            <a href="https://interagencystandingcommittee.org/" class="link-list" target="_blank"><img src="/sites/unocha/files/IASC.png" alt="IASC" width="74"></a>
+          </li>
+          <li>
+            <a href="https://www.insarag.org/" class="link-list" target="_blank"><img src="/sites/unocha/files/INSARAG.png" alt="INSARAG" width="74"></a>
+          </li>
+          <li>
+            <a href="https://www.redhum.org/" class="link-list" target="_blank"><img src="/sites/unocha/files/Redhum.png" alt="Redhum" width="88"></a>
+          </li>
+          <li>
+            <a href="https://reliefweb.int/" class="link-list" target="_blank"><img src="/sites/all/themes/custom/unocha_main_site/images/logos/reliefweb.png" alt="Reliefweb" width="88"></a>
+          </li>
+          <li>
+            <a href="https://fts.unocha.org/" class="link-list" target="_blank"><img src="/sites/unocha/files/fts.png" alt="FTS" width="88"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 white ">
+      <h2 class="white">Follow us</h2>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/UNOCHA" target="_blank"><i class="fa fa-lg fa-facebook"></i>
+              <span class="element-invisible">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/unocha" target="_blank"><i class="fa fa-lg fa-twitter"></i>
+              <span class="element-invisible">UNOCHA Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/UNReliefChief" target="_blank"><i class="fa fa-lg fa-twitter"></i>
+              <span class="element-invisible">UNReliefChief Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/united-nations-ocha" target="_blank"><i class="fa fa-lg fa-linkedin"></i>
+              <span class="element-invisible">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/un_ocha" target="_blank"><i class="fa fa-lg fa-instagram"></i>
+              <span class="element-invisible">Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/ochafilms" target="_blank"><i class="fa fa-lg fa-youtube"></i>
+              <span class="element-invisible">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 white ">
+      <h2 class="white">Support us</h2>
+      <p class="white">Governments, corporations and foundations: <a href="mailto:ocha.donor.relations@un.org">ocha.donor.relations@un.org</a></p>
+      <p class="white">Individuals can donate here:</p>
+      <a class="btn donate-top-button donate-footer-button white" id="donate" href="https://crisisrelief.un.org/">DONATE</a>
+          </div>
+  </div>
+</div>
+<!-- footer-bottom -->
+<div class="container-fluid black-bk footer bottom-footer">
+  <div class="row" style="text-align:center;">
+    <div class="col-md-12">
+      <ul class="list-inline">
+        <li><a href="https://www.un.org/en/sections/about-website/copyright/index.html" target="_blank">Copyright</a></li>
+        <li><a href="https://www.un.org/en/sections/about-website/terms-use" target="_blank">Terms of Use</a></li>
+        <li><a href="https://www.un.org/en/sections/about-website/privacy-notice" target="_blank">Privacy Notice</a></li>
+      </ul>
+      <span class="white center">&copy; United Nations Office for the Coordination of Humanitarian Affairs</span>
+    </div>
+  </div>
+</div>
+  <script src=""></script>
+
+  <!--Search black background-->
+  <div class="search-bk"></div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"gov-bam.nr-data.net","licenseKey":"e47e4f98d6","applicationID":"105274623","transactionName":"bgNRZhdZXEtTUBcPXVdJclERUV1WHUMCAVdmC1JcBF9XSm1dDAJXZhBaVxJnQllVVg==","queueTime":0,"applicationTime":431,"atts":"QkRSEF9DT0U=","errorBeacon":"gov-bam.nr-data.net","agent":""}</script></body>
+</html>

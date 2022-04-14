@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics --
+      -------------------------------------------------->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57293135-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-57293135-1');
+    </script>
+    <!--------------------------------------------------
+      -- Global site tag (gtag.js) - Google Analytics -->
+
+    <meta charset="utf-8">
+    <title>Pacific Decadal Oscillation (PDO) | National Centers for Environmental Information (NCEI)</title>
+    <meta name="description" content="Pacific Decadal Oscillation (PDO)" />
+    <meta name="keywords" content="Pacific Decadal Oscillation, PDO" />
+    <meta name="author" content="NCEI.Monitoring.Info@noaa.gov" />
+
+    <link rel="shortcut icon" href="https://www.ncei.noaa.gov/themes/custom/ncei/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <link rel="stylesheet" media="all"   href="/monitoring-content/lib/css/reset.css" />
+    <link rel="stylesheet" media="all"   href="/monitoring-content/lib/css/jquery-ui-1.12.1-themes/smoothness/jquery-ui.min.css" />
+    <link rel="stylesheet" media="all"   href="/monitoring-content/lib/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" media="all"   href="/monitoring-content/lib/css/main.css" />
+    <link rel="stylesheet" media="print" href="/monitoring-content/lib/css/print.css" />
+    <link rel="stylesheet" href="/teleconnections/pdo/css/pdo.css" />
+    
+    <!-- Font Awesome v5.15 -->
+    <script src="/monitoring-content/lib/js/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="/monitoring-content/lib/js/jquery-3.5.1.min.js"></script>
+    <script src="/monitoring-content/lib/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="/monitoring-content/lib/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/monitoring-content/lib/js/img-overlay.js"></script>
+    <script src="/monitoring-content/lib/js/alerts.js"></script>
+    <script src="/monitoring-content/lib/tablesorter-2.31.3/js/jquery.tablesorter.min.js"></script>
+    <script src="/monitoring-content/lib/tablesorter-2.31.3/js/jquery.tablesorter.widgets.min.js"></script>
+    <script src="/monitoring-content/lib/js/zingchart-2.9.3/zingchart.min.js"></script>
+  </head>
+  <body>
+    <a class="skip-to-main" href="#main-content">Skip to main content</a>
+    <header role="banner">
+      <div class="print" id="print-head"><img alt="NOAA Logo" src="/monitoring-content/lib/images/noaa-logo.png" /> NOAA's National Centers for Environmental Information</div>
+      <span id="backToTop" title="Back to Top"><span></span></span>
+      <div class="ncei-header-footer-container">
+        <div class="ncei-header-footer">
+          <div class="ncei-header-footer-inner">
+            <div class="ncei-footer-third-width">
+              <div class="ncei-header-logo">
+                <a href="http://www.ncei.noaa.gov"><img src="/monitoring-content/lib/images/ncei/logo.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage" /></a>
+              </div>
+            </div>
+      <div class="ncei-footer-two-thirds-width">
+        <div class="product-name"><h1>Pacific Decadal Oscillation (PDO)</h1></div>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-container">
+        <div class="ncei-app-inner container">
+          <div class="ncei-footer-two-thirds-width"><nav role="navigation" aria-label="Breadcrumbs"><ol class="app-breadcrumbs"><li class="app-breadcrumb-item"><a href="/">Home</a></li><li class="app-breadcrumb-item"><a href="/climate-monitoring/">Climate Monitoring</a></li><li class="app-breadcrumb-item">Pacific Decadal Oscillation (PDO)</li></ol></nav></div>
+          <div class="ncei-footer-third-width" id="next-release"><a href="/monitoring-references/dyk/monthly-releases">January US Release: Tue, 8 Feb 2022, 11:00 AM EST</a></div>
+        </div>
+      </div>
+      <div class="alerts"></div>
+    </header>
+    <main role="main" id="main-content" tabindex="-1">
+      <div id="page-content-container">
+        <div id="page-content" class="container"><div id="chartCanvas"></div>
+
+<div id="view-data" class="marginTop marginBottom"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dataModal">View Data</button></div>
+
+<div class="modal fade text-wrap" id="dataModal" tabindex="-1" aria-labelledby="indexTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-title" id="indexTitle"></div>
+      </div>
+      <div class="modal-body">
+        <div id="data-table-div"></div>
+      </div>
+      <div class="modal-footer">
+        <a id="data-source" title="Access Data" class="btn btn-primary">Access Data</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The Pacific Decadal Oscillation (PDO) is often described as a long-lived El Ni&ntilde;o-like pattern of Pacific climate variability (Zhang et al. 1997). As seen with the better-known El Ni&ntilde;o/Southern Oscillation (ENSO), extremes in the PDO pattern are marked by widespread variations in the Pacific Basin and the North American climate. In parallel with the ENSO phenomenon, the extreme phases of the PDO have been classified as being either warm or cool, as defined by ocean temperature anomalies in the northeast and tropical Pacific Ocean. When SSTs are anomalously cool in the interior North Pacific and warm along the Pacific Coast, and when sea level pressures are below average over the North Pacific, the PDO has a positive value. When the climate anomaly patterns are reversed, with warm SST anomalies in the interior and cool SST anomalies along the North American coast, or above average sea level pressures over the North Pacific, the PDO has a negative value (Courtesy of <!--<a href="http://www.atmos.washington.edu/~mantua/REPORTS/PDO/PDO_cs.htm">Mantua, 1999</a>--><a href="#mantua-1999">Mantua, 1999</a>).</p>
+
+<p>The NCEI PDO index is based on NOAA's extended reconstruction of SSTs (<a href="/data-access/marineocean-data/extended-reconstructed-sea-surface-temperature-ersst-v5">ERSST Version 5</a>). It is constructed by regressing the ERSST anomalies against the Mantua PDO index for their overlap period, to compute a PDO regression map for the North Pacific ERSST anomalies. The ERSST anomalies are then projected onto that map to compute the NCEI index. The NCEI PDO index closely follows the Mantua PDO index.</p>
+
+<h3>References</h3>
+<ul class="references">
+  <li id="mantua-1999">Mantua, N.J. 1999 : The Pacific Decadal Oscillation. A brief overview for non-specialists, Encyclopedia of Environmental Change.</li>
+</ul>
+<script>
+$(document).ready(function(){
+  plotTimeSeries();
+});
+
+function plotTimeSeries(){
+  $.ajax({
+    url : "/teleconnections/pdo/zingchart-config.js"
+  }).done(function(){
+    $("#chartCanvas").html("");
+    $("#chartCanvas").attr("alt","Time Series");
+    createDataTable(chartConfigchartCanvas.title.text,chartConfigchartCanvas.scaleX.labels,chartConfigchartCanvas.series[0].values,chartConfigchartCanvas.labels[0].url);
+  }).fail(function(){
+    $("#view-data,#chartCanvas").hide();
+    $("#chartCanvas").html('<div class="error-txt">Time Series failed to load.</div>');
+    $("#chartCanvas").css("height","auto");
+  });
+  $("#chartCanvas").html('<div class="center pad gray-txt white-bg">Retrieving Time Series<div><img alt="loader" src="/monitoring-content/lib/images/noaa_loader.gif" /></div></div>');
+}
+
+function createDataTable(title,labels,values,source){
+  var table = '<table id="data-table"><thead><tr><th>Date</th><th>'+title.match(/\(([^)]+)\)/)[1]+"</th></thead><tbody>";
+  $.each(labels,function(ndx,label){
+    let dateObj = new Date("10 "+label),
+        value = values[ndx],
+        valueClass = "neutral";
+    if (parseFloat(value) > 0) valueClass = "cold"; else if (parseFloat(value) < 0) valueClass = "warm";
+    table += '<tr>'+
+               '<td data-sortval="'+dateObj.getFullYear()+("0"+(dateObj.getMonth()+1)).slice(-2)+'">'+
+                 label+
+               '</td>'+
+               '<td data-sortval="'+(value === null ? "--" : value.toFixed(2))+'">'+
+                 '<span class="'+valueClass+'">'+(value === null ? "--" : value.toFixed(2))+"</span>"+
+               "</td>"+
+              "</tr>";
+  });
+  table += "</tbody></table>";
+  $("#indexTitle").html(title.substr(0,title.indexOf("(")).trim());
+  $("#data-source").attr("href",source);
+  $("#data-table-div").html(table);
+  $("#data-table").tablesorter({
+    textExtraction: function(node) {
+      return ($(node).text() == "--" ? "" : $(node).data("sortval"));
+    },
+    emptyTo: 'bottom',
+    // initial sort on first column (date), descending order
+    sortList    : [[0,1]],
+    widgets     : ['zebra', 'columns'],
+    sortRestart : true,
+    theme       : 'none'
+  });
+}
+</script>
+
+        </div>
+      </div>
+    </main>
+    <footer role="contentinfo">
+      <div class="ncei-header-footer-container">
+        <div class="ncei-header-footer">
+          <div class="ncei-header-footer-inner">
+            <div class="ncei-footer-half-width">
+              <div class="ncei-footer-logo">
+                <a href="http://www.ncei.noaa.gov">
+                  <img src="/monitoring-content/lib/images/ncei/logo_bw.svg" title="Link to NCEI's Homepage" alt="Link to NCEI's Homepage" />
+                </a>
+              </div>
+            </div>
+            <div class="ncei-footer-quarter-width">
+              <p class="ncei-header-footer-title">FOLLOW US</p>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/NOAANCEI/">
+                    @NOAANCEI
+                    <img src="/monitoring-content/lib/images/ncei/facebook-icon.png" title="NCEI Facebook" alt="NCEI Facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/noaadata/">
+                    @NOAAData
+                    <img src="/monitoring-content/lib/images/ncei/instagram-icon.png" title="NOAA Data Instagram" alt="NOAA Data Instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/NOAANCEIocngeo">
+                    Ocean & Geophysics
+                    <img src="/monitoring-content/lib/images/ncei/twitter-icon.png" title="NCEI Ocean and Geophysics Twitter" alt="NCEI Ocean and Geophysics Twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/NOAANCEIclimate">
+                    Weather & Climate
+                    <img src="/monitoring-content/lib/images/ncei/twitter-icon.png" title="NCEI Climate Twitter" alt="NCEI Climate Twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.ncei.noaa.gov/news.xml">
+                    News Feed
+                    <img src="/monitoring-content/lib/images/ncei/rss-icon.png" title="NCEI RSS Feed" alt="NCEI RSS Feed" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ncei-footer-quarter-width">
+              <p class="ncei-header-footer-title">
+                CONTACT US
+              </p>
+              <ul>
+                <li>
+                  <a href="mailto:ncei.info@noaa.gov">
+                    Email: ncei.info@noaa.gov
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:8282714800">
+                    Phone: (828) 271-4800
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/monitoring-content/lib/js/back-to-top.js"></script>
+  <script id="_fed_an_ua_tag" type="text/javascript" src="/scripts/federated-analytics.js?agency=DOC%26subagency=NOAA"></script></body>
+</html>

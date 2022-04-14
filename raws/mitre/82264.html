@@ -1,0 +1,319 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta name="GENERATOR" content="IMPERIA 9.2.14_1" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Migration Conflict</title>        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/lightview.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/base.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/globals.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/general.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/grid.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/modules_2.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/lightbox.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/knavigator.css" media="screen" />
+         <link rel="stylesheet" type="text/css" href="/cms06/res/css/mobile.css" media="screen" />
+         <meta name="X-Imperia-Live-Info" content="69f9eb4c-f1b7-e538-7683-212914705a50/11731/11751/11755/55562" />
+
+		<link rel="stylesheet" type="text/css" href="/cms06/res/css/print.css" media="print" />
+        <script type="text/javascript" src="/cms06/res/js/namespace.js"></script>
+		<script type="text/javascript" src="/cms06/res/js/prototype/prototype.js"></script>
+		<script type="text/javascript" src="/cms06/res/js/prototype/scriptaculous.js"></script>
+        <script type="text/javascript" src="/cms06/res/js/lightview.js"></script>
+        <script type="text/javascript" src="/cms06/res/js/lightbox.min.js"></script>
+        <script type="text/javascript" src="/cms06/res/js/general.js"></script>
+        <script type="text/javascript" src="/cms06/res/js/mobile.js"></script>
+        <script type="text/javascript" src="/cms06/res/js/knavigator.js"></script>
+        <!--[if lt IE 7]>
+        <link rel="stylesheet" type="text/css" href="/cms06/res/css/ie6patch.css" media="screen" />
+        <script type="text/javascript" src="/cms06/res/js/ie6flicker.js"></script>
+        <![endif]-->
+
+        <!-- //js glossar -->
+        <script type="text/javascript" src="/cms06/res/js/glossar.js"></script>
+        <script type="text/javascript" src="/cms06/res/js/helpballoon/src/HelpBalloon.js"></script>
+        <script type="text/javascript" src="/cms06/res/js/glossarBuilder.js"></script>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+/* tracker methods like "setCustomDimension" should be called before
+"trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var u="https://stats.hzg.de/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '6']);
+    var d=document, g=d.createElement('script'),
+        s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true;
+    g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+</head>
+	<body class="pageArticle pageColorPattern1">
+
+        <div id="outer">
+			<div id="header">
+				<!-- begin: moduleHeader //-->
+                	       <!--IFTS_NO_PARSE-->
+       <div class="moduleHeader clearfix">
+         <a href="/cms06/index.php"><img src="/cms06/res/img/logos/logo.png" width="258" height="74" alt="Klimanavigator-Logo" /></a>
+         <div class="boxSearch">
+            <form action="/cgi-bin/fts_klimanavigator.pl" method="get" name="ftsquick" id="ftsquick">
+               <div class="globalBoxRow clearfix">
+                  <input class="globalFormText globalFormPrevText" type="text" name="search" value="Stichwort eingeben" />
+                   <button class="globalSubmitButton">Suchen</button>
+				</div>
+                 <div class="clearfix">
+                    <div class="searchinLabel">Suche in:</div>
+                    <input id="search_institutions" class="globalFormCheckbox" type="checkbox" name="GROUP" value="INST"  onchange="setSearchScope(this.value);"/>
+                    <label class="globalFormLabel" for="search_institutions">Institutionen &amp; Verbünde</label>
+                    <input id="search_whole_website" class="globalFormCheckbox" type="checkbox" name="GROUP" value="ALL" checked="checked" onchange="setSearchScope(this.value);"/>
+                    <label class="globalFormLabel" for="search_whole_website">Gesamte Website</label>
+				</div>
+				<input type="hidden" value="1" name="HTML-NR" />
+              </form>
+          </div>
+       </div>
+
+               	<!-- end: moduleHeader //-->
+                <!-- begin: moduleTopNavi //-->
+
+		<!-- begin: moduleNavigation //-->
+	            <a id="menue" name="menue"></a>
+	           <div class="moduleTopNavi clearfix">
+
+	            	<ul class="top">
+	<li class="hzgcd">
+		<a href="/cms06/idee/index.php">ÜBER UNS</a>
+	</li>
+	<li class="hzgcd">
+		<a href="/aktuelles">AKTUELLES</a>
+	</li>
+	<li class="hzgcd long" style="width:220px;">
+		<a href="/themensuche">INSTITUTIONEN &amp; VERB&Uuml;NDE</a>
+	</li>
+	<li  class="hzgcd active">
+  		<a href="#">KLIMAWISSEN</a>
+          			<ul class="flyout">
+          			        <li>
+                               <a href="/cms06/menschen/index.php">Übersicht</a>
+                            </li>
+            				<li>
+                                      				<a href="/cms06/dossier/index.php">Dossiers &amp; Themenportale</a>
+                            			    	</li>
+                    <li>
+                        <a href="/cms06/links/038441/index.php">Klimaatlanten</a>
+                    </li>
+                    <li>
+                        <a href="/cms06/glossar/011629/index.php">Glossar</a>
+                    </li>
+                    <li>
+                        <a href="http://edoc.sub.uni-hamburg.de/klimawandel" target="_blank">Dokumentenserver</a>
+                    </li>
+                  </ul>  
+	</li>
+	<li  class="hzgcd" >
+  		<a href="#">LINKS</a>
+		   <ul class="flyout">
+			 <li>
+			 	 <a href="/cms06/links/037870/index.php">Deutschland</a>
+			 </li>
+			<li>
+			  <a href="/cms06/links/037871/index.php">Europa</a>
+			 	</li>
+			<li>
+			 	 <a href="/cms06/links/037872/index.php">International</a>
+			</li>
+		    </ul>
+	</li>
+</ul>
+	            </div>
+		<!-- end: moduleNavigation //--><!--IFTS_PARSE-->
+                <!-- end: moduleTopNavi //-->
+           </div><!-- end: header //-->
+		   <div id="main">
+
+
+
+		   			<div class="moduleArticleControler">
+		<div class="boxTop"><!-- //--></div>
+        <div class="boxMiddle">
+            <a href="/cms06/dossier/index.php">Zur Übersichtsseite "Dossiers"</a>
+            <form action="">
+                <select class="globalFormSelect formChangePageJS">
+                    <option value="Auswahl Dossier">Auswahl Dossier</option>
+                    
+    <option value="/cms06/dossier/dossiers/057930/index.php">Climate Change, Migration and Security</option>
+    <option value="/cms06/dossier/dossiers/012009/index.php">Extreme Ereignisse</option>
+    <option value="/cms06/dossier/dossiers/011976/index.php">Globale Klimamodellierung</option>
+    <option value="/cms06/dossier/dossiers/035587/index.php">Klimawandel in Norddeutschland</option>
+    <option value="/cms06/dossier/dossiers/088262/index.php">Klimawandel in Norddeutschland</option>
+    <option value="/cms06/dossier/dossiers/037505/index.php">Klimawandel und Wirtschaft</option>
+    <option value="/cms06/dossier/dossiers/079437/index.php">Klimawandel und Wirtschaft - neu</option>
+    <option value="/cms06/dossier/dossiers/057759/index.php">Klimawandel, Migration und Sicherheit</option>
+    <option value="/cms06/dossier/dossiers/033723/index.php">Regionale  Klimamodellierung </option>
+    <option value="/cms06/dossier/dossiers/011966/index.php">Treibhauseffekt und Emissionsszenarien      </option>
+    <option value="/cms06/dossier/dossiers/035535/index.php">Wahrnehmung des Klimawandels </option>
+<!-- IMPERIA 10.5.4 ACTIVE XTENSION 14.07.2021 14:17:38 -->
+                </select>
+            </form>
+        </div>
+        <div class="boxBottom"><!-- //--></div>
+    </div><!-- end: moduleArticleControler //-->
+    <div class="moduleImageTeaserB">
+        <span class="boxSubHeadline">11.08.2015</span>
+        <h1>
+          <img src="/imperia/md/images/csc/web/fittosize__455_0_e8cce8d54a22d645923846636a474561_refugees_unhcr_cut_lang.jpg" width="455" height="190" alt="" />
+          <span class="boxOpacity boxOpacityC1"><!-- //--></span>
+          <span class="boxContent">
+             <span class="boxHeadline">Climate Change, Migration and Security </span>
+			<span class="boxText"> Climate change not only disrupts ecosystems; it also poses threats to the livelihoods and survival of people worldwide.  </span>
+          </span>
+        </h1>
+    </div><!-- end: moduleImageTeaserB //-->
+
+
+						<div class="grid2Cols clearfix">
+            <div class="gridColLeft">
+
+  	<div class="moduleImp1 clearfix"  ><h2>Climate Change, Migration and Conflict</h2>
+<p>In early assessments of the potential links between climate change and violent conflict, migration loomed large. It was often predicted that large numbers of people would be displaced by climate change. In its first assessment report, for instance, the International Panel on Climate Change (IPCC) warned in 1990: “the gravest effects of climate change may be those on human migration as millions are displaced by shoreline erosion, coastal flooding and severe drought” (IPCC 1990: 20). From this it was a small leap to predictions of major conflict in receiving regions both within countries suffering from climate change as well as internationally. At the core was the conviction that climate change would result in resource scarcities, which in turn would drive migration as well as conflict. When in 2007/2008 discussions on the effects of climate change were dominated, at least in advanced Western countries, by security concerns, the fear of large numbers of people from poor countries “flooding” the United States and Western Europe was a central aspect of the “securitisation” of climate change (Brzoska &amp; Oels 2011). <br /><br />Academic research into the links between climate change, migration and conflict has questioned such predictions. Their theoretical foundation and empirical support is thin. This does not mean that climate change will be irrelevant for future patterns of migration, including migration that may be linked to conflict. However, it has become clear that the links between climate change, migration and conflict are complex and defy simple and sensationalist conclusions. Unsurprisingly therefore, the climate change-migration-conflict nexus is not among the risks emphasised in the IPCC 5th assessment report published in 2014 (IPCC 2014, Summary for Policy Makers). <br /></p></div>
+  	<div class="moduleImp1 clearfix"  ><h4>Environment and Conflict</h4>
+<div class="impImgContainer" style="float:left;padding-right:15px;padding-bottom:0;width:200px;"><img src="/imperia/md/images/csc/klimanavigator/migration/fittosize__200_0_01aa3856343fb7e7aaf6f95e38d2a991_unhcr_h.caux_chad_darfur.jpg" alt="More than 180000 Sudaneses have fled violence in Sudan’s Darfur region, crossing the border to the remote desert of eastern Chad. © UNHCR / H.Caux" class="impContentImg" /><p class="impImgCopy">More than 180000 Sudaneses have fled violence in Sudan’s Darfur region, crossing the border to the remote desert of eastern Chad. © UNHCR / H.Caux</p></div><p>Modern research on the relationship between the environment and conflict began in the 1970s as a theme in peace and conflict studies. The focus was on environmental degradation and scarcity of renewable resources as a cause of violent conflict. Even though a central finding of this line of research was that environmental factors are not by themselves causing violent conflict, researchers found considerable evidence that environmental degradation and resource scarcity can contribute to the likelihood of violent conflict when coinciding with other conflict drivers, such as ethnic polarisation, weak political structures and low levels of economic development (Bächler et al 1996; Homer-Dixon 1999; Kahl 2006). However, later authors investigating the link between resource scarcity and violent conflict have largely expressed skepticism. This is particularly true for researchers using quantitative methods to comparatively analyse large numbers of cases (de Soysa 2002; Buhaug et al. 2010).</p></div>
+  	<div class="moduleImp1 clearfix"  ><h4>Bringing Migration In </h4>
+<p>Migration was considered one of the pathways of linking environmental degradation and violent conflict in the literature on environmental security. Particular attention was paid to conflicts between pastoralists and farmers. Thus, it was posited already in the 1990s that conflicts in the Darfur region of Sudan were strongly influenced by lack of rainfall (Bächler et al. 1996). In general, migration was seen as potentially contributing to resource scarcity in receiving regions. Thus, violent conflicts could be expected in receiving regions with weak structures and institutions to prevent or mediate resource scarcity (Homer-Dixon 1999; Reuveny 2008).<br /><br />While not ignoring the complexity of the consequences of migration, the environmental scarcity literature selectively emphasised environmental factors. Such an emphasis, however, runs counter to the mainstream of migration studies. Modern migration research has largely been dismissive of claims that migration leads to or facilitates conflict, except in special cases of ‘militarised migration’ such as cross-border movements of armed fighters (Muggah 2006). Most of migration research has been particularly skeptical about the claim that conflicts over resources lead to violence in receiving regions. While it is not difficult to find such cases, they do not seem to be very frequent (Raleigh &amp; Urdal 2007).   <br /></p></div>
+  	<div class="moduleImp1 clearfix"  ><h4>Adding Climate Change</h4>
+<p>Recent research on global warming and its consequences for global peace has revived and extended the earlier research on environmental scarcity. A broader set of environmental issues was considered. For instance, extreme weather events and ensuing disasters received attention in addition to slow-onset environmental change. But resource scarcity remained the core issue of concern. Thus, initial claims of the conflict potential of climate-induced migration echoed those of the early research on environmental scarcity. Migration resulting from climate change was considered one of the more likely scenarios for the outbreak and/or escalation of conflict in the context of climate change (Barnett 2003; Smith &amp; Vivekananda 2007). This was particularly emphasised in the literature aiming at policy makers (CNA 2007; WBGU 2007; UNGA 2009). <br /><br />Again, however, closer analysis led to differentiations, both with respect to the links between climate change and the causes and consequences of migration as well as with respect to the effects of migration in receiving regions.  <br /><br />Early estimates of large numbers of people – up to 250 million by 2050 – moving because of climate change in the coming decades were based on scant evidence and ignored adaptation measures. The latter, however, had been identified as a major factor shaping migration in the face of resource scarcity.<br /><br />Three types of migration patterns are particularly important when discussing climate change: 1) Population movements driven by livelihood strategies. Such population movements are already frequent all over the world. They are generally selective with respect to households, temporary and short-term. The main driver is income. Environmental changes thus can be expected to affect such population movements, but only in relation to a multitude of other factors, particularly the effects of climate change on livelihoods in both potential sending and receiving regions.  2) “Forced” migration. This can be found where living conditions have dropped below a bearable level. But even in such situations, migration is not the only option, particularly when international attention and aid is available. Black and others (Foresight 2011), in an important study, have argued that particularly poor populations may even be caught in a “trap”, as migration requires a minimum of resources. 3) Migration from areas where the physical environment is vanishing due to climate change, such as small islands and coastal areas. However, while costly, adaptation measures are possible and already planned, obviously particularly in richer countries.<br /><br />With respect to the likelihood of climate-induced migration inducing or fostering conflict in receiving regions, newer research has again emphasised the importance of adequate structures and institutions. One important addition to the debate has been the potential of migration to improve the economic situation in receiving regions (Foresight 2011). It also should be noted that migration can serve as an adaptation strategy in a changed environment by helping to diversify family income through remittances and thereby rendering the community less dependent on agricultural production, for instance. Such additional capital can even serve to facilitate adaptation to climate change. Moreover, migration can enhance the knowledge and skill base of a family or community in a way which may help to develop additional or new adaptation measures.   <br /></p></div>
+  	<div class="moduleImp1 clearfix"  ><h4>Direct and Indirect Causality</h4>
+<p>While there is controversy over the salience of the core elements of the relationship between climate-induced migration and violent conflict, a number of models of potential causality have been developed. The WBGU proposed a pathway directly linking climate change with conflict but identifying personal, group and societal factors which intervene (WGBU 2007). Gleditsch, Nordås and Salehyan (2007) have developed two causal pathways which may lead from environmental stress to migration to conflict. In the direct pathway, environmental stress results directly in migration movements to a new area which then experiences tensions. In the indirect pathway, environmental changes cause resource conflicts in the traditional habitat, leading to migration movements to a new region which then also experiences tensions. Thus, environmental stress can create both “environmental refugees“ and refugees in the traditional sense (Gleditsch et al. 2007, 4f). They assume that there are significant differences between these two refugee groups with regard to their relevance for conflict. Traditional refugees from the indirect pathway tend to import established conflict structures, weapons, resources, organisational structures and violent ideologies from the preceding resource conflict to the receiving area, thereby heightening the risk of organised violence in their new habitat. Direct environmental migrants, on the contrary, are not usually involved in existing violent conflict, do not perceive themselves as victims of suppression and persecution, and do not aim for retaliation, since the general understanding of environmental change is as an act of nature beyond the control of any government or other group (Gleditsch et al. 2007, 6f.).<br /><br />While these and other models are plausible, they need to be substantiated through empirical evidence. Empirical support so far is scant. On environmental disasters, migration and conflict, two major studies come to contradictory results (Nel &amp; Righarts 2008; Slettebak 2012). Similarly, on slow-onset climate change, the evidence linking it with migration and conflict is mixed. This may be due to the limited extent of climate change so far, although extensive droughts, floods and local environmental change have also occurred in the past and can thus be used for analysis. Another, more plausible reason is the embeddedness of both of the links between climate change and migration as well as those between migration and violent conflict in wider contexts of conflict and transformation, in the home as well as receiving regions, which makes it difficult to isolate just these links. This is true both for single cases, which can go in opposite directions as shown below, as well as for cross-national analyses. <br /><br />The lack of a strong theoretical framework as well as conclusive empirical evidence does not imply that climate change may not be an important driver of violent conflict via migration. However, today’s knowledge does not support such a claim.  <br /></p></div>
+  	<div class="moduleImp1 clearfix"  ><h4>Contradictory Case Studies</h4>
+<p>Bangladesh and North India are considered a prime example for the relationship between environmentally induced migration movements and armed conflict (Reuveny 2008). Settling Bengali flood and storm victims on native land in the Chittagong Hill Tracts has lead to a drawn-out guerilla war. The Indian states Assam and Tripura also experienced violence between Bengali immigrants and the native population. The reasons include an upsetting of the ethnic balance in the region as well as competition over resources between natives and immigrants. Refugees who enjoy support by the state and thus have a voice, who differ from the native population in ethnicity, nationality and/or religion, who have experienced violent conflict with the receiving population earlier and who want to settle long-term in the receiving area seem to be more prone to violence than others. <br /><br />An opposite case where migration, which at least partly was linked to worsening environmental conditions, helped to improve living conditions and reduce conflict potential has been described for communities in Northwest Africa (Scheffran, Marmor &amp; Sow 2012). Migrants from that region to other parts of the world, including rich countries, have been found to invest into projects which increase resilience to climate change as well as economic improvement in home regions. </p></div>
+  	<div class="moduleImp1 clearfix"  ><h4>Conclusion</h4>
+<p>To sum up, the conflictive power of environmentally induced population movements is far from established (Warnecke et al. 2010: 1; Scheffran et al. 2012: 6). While in some cases, environmental migration leads to violent conflict, in others the situation remains calm, or migration may even contribute to the lessening of tensions. Both conflict and peaceful co-existence thus remain plausible scenarios for projections of large population movements in the wake of climate-induced environmental degradation (Warnecke et al. 2012: 8). Overall, the assumed causality between climate change, migration and violent conflict has not been empirically proven, but remains potentially important. <br /></p></div><div class="moduleC9 clearfix"><span class="boxHeadline">Continue to</span><ul>
+<li>
+<a href="/cms06/dossier/artikel/055333/index.php" target="" class="">Migration for Climate Adaptation</a></li>
+<li>
+<a href="/cms06/dossier/artikel/055631/index.php" target="" class="">The Governance of Climate Change-Induced Migration</a></li>
+<li>
+<a href="/cms06/dossier/artikel/055643/index.php" target="" class="">Framing Legal Strategies for Dealing with Environmental Degradation, Human Mobility and Development </a></li>
+<li>
+<a href="/cms06/dossier/artikel/055629/index.php" target="" class="">Short-term protection needs and long-term policy implications</a></li>
+<li>
+<a href="/cms06/dossier/artikel/055618/index.php" target="" class="">Gender impacts and social differentiations of climate-induced migration</a></li></ul></div>
+			</div>
+			<div class="gridColRight">
+
+              <div class="moduleAuthor  clearfix"><span class="boxHeadline">Authors</span>
+  			<div class="clearfix">
+                <div class="boxLeft">
+                   <img src="/imperia/md/images/csc/klimanavigator/migration/fittosize__100_0_6f5d4afae7796e6429e85958477292a4_michael_brzoska.jpg" style="width:100px" alt="Michael Brzoska" />
+                </div>
+				<div class="boxRight">
+                    Prof. Dr. Michael Brzoska<br />Institute for Peace Research and Security Policy<br />University Hamburg
+                     <br /><a href="mailto:"></a>
+                 </div>
+            </div></div><!-- end: moduleAuthor //--><div class="moduleSources clearfix"><ul>
+<li>
+<a href="https://ifsh.de/personen/brzoska" target="_blank" class="globalLinkArrow">Michael Brzoska at Institut für Friedensforschung und Sicherheitspolitik</a></li></ul></div><div class="moduleAuthor  clearfix"><span class="boxHeadline">Authors</span>
+  			<div class="clearfix">
+                <div class="boxLeft">
+                   <img src="/imperia/md/images/csc/klimanavigator/migration/fittosize__100_0_506458607b914446868f817c0820c3c4_susanne_froehlich_cut.jpg" style="width:100px" alt="Susanne Froehlich" />
+                </div>
+				<div class="boxRight">
+                    Dr. Christiane Fröhlich<br />Institute for Peace Research and Security Policy<br />University Hamburg
+                     <br /><a href="mailto:"></a>
+                 </div>
+            </div></div><!-- end: moduleAuthor //--><div class="moduleSources clearfix"><ul>
+<li>
+<a href="https://www.giga-hamburg.de/de/team/fr%C3%B6hlich" target="_blank" class="globalLinkArrow">Christiane Fröhlich at GIGA Institute of Middle East Studies</a></li></ul></div><div class="moduleSources clearfix"><span class="boxHeadline">References</span><ul>
+<li>
+<a href="http://gso.gbv.de/DB=2.1/SET=2/TTL=4/MAT=/NOMAT=T/CLK?IKT=8062&TRM=O%CC%88kologische+Konflikte+in+der+Dritten+Welt+und+Wege+ihrer+friedlichen+Bearbeitung" target="_blank" class="globalLinkArrow">Bächler, G., Volker, B., Stefan. K., Stephan. L. & Spillmann, K. R. (1996) Environmental Degradation as a Cause of War: Ecological Conflicts in the Third World and Peaceful Ways of Resolving Them. Zurich, Rüegger. </a></li>
+<li>
+<a href="http://www.sciencedirect.com/science/article/pii/S0959378002000808" target="_blank" class="globalLinkArrow">Barnett, J. (2003) Security and climate change. Global Environmental Change. 13 (1), 7-17.</a></li>
+<li>
+<a href="http://www.nomos-shop.de/Brzoska-Kalinowski-Matthies-Meyer-Klimawandel-Konflikte/productview.aspx?product=13388" target="_blank" class="globalLinkArrow">Brzoska, M. & Oels, A. (2011) ‘Versicherheitlichung‘ des Klimawandels? Die Konstruktion des Klimawandels als Sicherheitsbedrohung und ihre politischen Folgen.“ In: Brzoska, M,. Kalinowski, M. B., Matthies, V., & Meyer, B.,  (ed.). Klimawandel und Konflikte: Versicherheitlichung versus präventive Friedenspolitik?, p 51-66. Baden-Baden, Nomos.</a></li>
+<li>
+<a href="https://www.prio.org/utility/DownloadFile.ashx?id=595&type=publicationfile" target="_blank" class="globalLinkArrow">Buhaug, H., Gleditsch, N. P. & Theisen, O. M. (2010) Implications of Climate Change for Armed Conflict. In Mearns, R., Norton, A. (Hrsg.): Social Dimensions of Climate Change, p. 75-102. Washington D.C., World Bank.</a></li>
+<li>
+<a href="https://www.cna.org/CNA_files/pdf/National%20Security%20and%20the%20Threat%20of%20Climate%20Change.pdf" target="_blank" class="globalLinkArrow">CNA (2007): National Security and the Threat of Climate Change. Alexandria. </a></li>
+<li>
+<a href="http://www.mitpressjournals.org/doi/abs/10.1162/152638002320980605?journalCode=glep#.U_NLOkirXhM" target="_blank" class="globalLinkArrow">de Soysa, I. (2002). Ecoviolence: Shrinking Pie or Honey Pot? Global Environmental Politics. 2 (4), p. 1-34</a></li>
+<li>
+<a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/287717/11-1116-migration-and-global-environmental-change.pdf" target="_blank" class="globalLinkArrow">Foresight (2011) Migration and Global Environmental Change. Final Project Report. London, The Government Office for Science.</a></li>
+<li>
+<a href="https://www.ipinst.org/2007/05/climate-change-and-conflict-the-migration-link" target="_blank" class="globalLinkArrow">Gleditsch, N. P., Nordås, R. & Salehyan, I. (2007) Climate Change and Conflict: The Migration Link. The Coping with Crisis Working Paper Series. New York, International Peace Academy.</a></li>
+<li>
+<a href="http://press.princeton.edu/titles/6640.html" target="_blank" class="globalLinkArrow">Homer-Dixon, T. F. (1999) Environment, Scarcity, and Violence. Princeton, Princeton University Press.</a></li>
+<li>
+<a href="https://www.ipcc.ch/publications_and_data/publications_and_data_reports.shtml#1" target="_blank" class="globalLinkArrow">IPCC (1990): First Assessment Report, Working Group II. Geneva </a></li>
+<li>
+<a href="http://www.ipcc.ch/report/ar5/wg2/" target="_blank" class="globalLinkArrow">IPCC (2014): Fifth Assessment Report, Working Group II. Geneva </a></li>
+<li>
+<a href="http://press.princeton.edu/titles/8208.html" target="_blank" class="globalLinkArrow">Kahl, C. H. (2006) States Scarcity, and Civil Strife in the Developing World. Princeton, Princeton University Press.</a></li>
+<li>
+<a href="http://jrs.oxfordjournals.org/content/21/2/253.full" target="_blank" class="globalLinkArrow">Muggah, R. (ed.) (2006) No Refuge: The Crisis of Refugee Militarization in Africa. London, Zed Books.</a></li>
+<li>
+<a href="https://academic.oup.com/isq/article-abstract/52/1/159/1789186?redirectedFrom=fulltext" target="_blank" class="globalLinkArrow">Nel, P. & Righarts, M. (2008) Natural Disasters and the Risk of Violent Civil Conflict. International Studies Quarterly. 52 (1), p. 159-185.</a></li>
+<li>
+<a href="http://www.sciencedirect.com/science/article/pii/S096262980700087X" target="_blank" class="globalLinkArrow">Raleigh, C. & Urdal, H. (2007) Climate change, environmental degradation and armed conflict. Political Geography. 26 (6), p. 674-694.</a></li>
+<li>
+<a href="http://link.springer.com/article/10.1007%2Fs10745-007-9142-5" target="_blank" class="globalLinkArrow">Reuveny, R. (2008) Ecomigration and Violent Conflict: Case Studies and Public Policy Implications. Human Ecology. 36 (1), p. 1-13.</a></li>
+<li>
+<a href="http://www.ccsenet.org/journal/index.php/res/article/view/19277" target="_blank" class="globalLinkArrow">Scheffran, J., Brzoska, M., Kominek, J., Link, P. M. & Schilling, J. (2012) Disentangling the Climate conflict Nexus: Empirical and Theoretical Assessment of Vulnerabilities and Pathways. Review of European Studies. 4 (5), p. 1-13.</a></li>
+<li>
+<a href="http://jpr.sagepub.com/content/49/1/163" target="_blank" class="globalLinkArrow">Slettebak, R. T. (2012) Don’t blame the weather! Climate-related natural disasters and civil conflict. Journal of Peace Research. 49 (1), p. 163-176.</a></li>
+<li>
+<a href="https://www.international-alert.org/publications/climate-conflict" target="_blank" class="globalLinkArrow">Smith, D. & Vivekananda, J. (2007) A Climate of Conflict. The links between climate change, peace and war. London, International Alert.</a></li>
+<li>
+<a href="http://www.securitycouncilreport.org/atf/cf/%7B65BFCF9B-6D27-4E9C-8CD3-CF6E4FF96FF9%7D/res%2063%20281.pdf" target="_blank" class="globalLinkArrow">United Nations General Assembly (UNGA) (2009): Climate Change and its possible security implications. A/RES/63/281. New York. </a></li>
+<li>
+<a href="https://www.wbgu.de/fileadmin/user_upload/wbgu/publikationen/hauptgutachten/hg2007/pdf/wbgu_hg2007_engl.pdf" target="_blank" class="globalLinkArrow">WBGU (Wissenchaftlicher Beirat Globale Umweltfragen) (2007) World in Transition: Climate Change as a Security Risk, Flagship Report 2007, London.</a></li>
+<li>
+<a href="https://www.bicc.de/uploads/tx_bicctools/gmf_climate-change-migration-conflict_07_2010.pdf" target="_blank" class="globalLinkArrow">Warnecke, A., Tänzler, D. & Vollmer, R. (2010) Climate Change, Migration and Conflict: Receiving Communities under Pressure? Washington D.C., The German Marshall Fund of the United States.</a></li></ul></div>
+            </div>
+		</div><!-- end: grid2Cols //-->
+
+
+						<!--IFTS_NO_PARSE-->
+           <div class="moduleActions clearfix">
+						 <a href="?printview=1" onclick="self.print();return false;">Drucken</a>
+			        </div> <!-- end: moduleActions //-->
+
+
+
+
+            </div> <!-- end: main //-->
+					 <div id="footer" class="moduleFooter">
+                <ul>
+
+            		<li><a href="/cms06/idee/index.php">Kontakt</a> | </li>
+
+            		<li><a href="https://hereon.de/innovation_transfer/communication_media/imprint/index.php.de" class="boxNewWindowJS">Impressum</a> | </li>
+
+            		<li><a href="https://hereon.de/innovation_transfer/communication_media/imprint/privacy_policy/index.php.de" class="boxNewWindowJS">Datenschutz</a> | </li>
+
+            		<li><a href="https://hereon.de/innovation_transfer/communication_media/imprint/barrierefreiheit/index.php.de" class="boxNewWindowJS">Barrierefreiheit</a> | </li>
+
+            		<li><a href="http://www.climate-service-center.de/" class="boxNewWindowJS">Powered by Climate Service Center Germany (GERICS)</a> | </li>
+
+	  		</ul>
+         </div><!-- end: moduleFooter //-->
+
+         </div><!-- end: outer //-->
+	</body>
+<!-- page created 2020-03-11 15:28 -->
+</html>
+
+
+
+
